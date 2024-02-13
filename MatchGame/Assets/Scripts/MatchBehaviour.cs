@@ -4,6 +4,8 @@ using UnityEngine.Events;
 public class MatchBehaviour : IDContainerBehaviour
 {
     public UnityEvent matchEvent, noMatchEvent;
+
+
     private void OnTriggerEnter(Collider other)
     {
         var tempObj = other.GetComponent<IDContainerBehaviour>();
@@ -20,6 +22,10 @@ public class MatchBehaviour : IDContainerBehaviour
         {
             noMatchEvent.Invoke();
             Debug.Log("No Match");
+            Debug.Log("GAME OVER!");
+            Time.timeScale = 0;
+            gameoverText.SetActive(true);
+            gameoverScreen.SetActive(true);
         }
 
         // Debug.Log(idObj);

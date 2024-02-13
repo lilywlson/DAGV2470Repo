@@ -12,6 +12,7 @@ public class SpriteBehaviour : MonoBehaviour
 
     public void ChangeRendererColor(ColorID obj)
     {
+        // Debug.Log("Yeehaw");
         rendererObj.color = obj.value;
     }
 }
