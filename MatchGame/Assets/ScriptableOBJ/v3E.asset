@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d31199c89bac6478fd4266971b4a26, type: 3}
-  m_Name: Score
+  m_Script: {fileID: 11500000, guid: 23682803a65b60e4b8f2b4dc6da1a623, type: 3}
+  m_Name: v3E
   m_EditorClassIdentifier: 
-  value: 0
+  value: {x: -1, y: 6, z: 0}
