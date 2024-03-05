@@ -23,9 +23,10 @@ public class MatchBehaviour : IDContainerBehaviour
         else
         {
             noMatchEvent.Invoke();
+            Destroy(gameObject);
             Debug.Log("No Match");
             Debug.Log("GAME OVER!");
-            Time.timeScale = 0;
+            // Time.timeScale = 0;
             // gameoverText.SetActive(true);
             // gameoverScreen.SetActive(true);
         }

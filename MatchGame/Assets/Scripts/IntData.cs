@@ -6,6 +6,11 @@ public class IntData : ScriptableObject
 {
     public int value;
 
+    public void ResetValue()
+    {
+        value = 0;
+    }
+
     public void SetValue(int num)
     {
         value = num;
