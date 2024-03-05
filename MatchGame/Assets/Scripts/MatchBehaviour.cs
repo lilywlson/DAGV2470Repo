@@ -16,6 +16,8 @@ public class MatchBehaviour : IDContainerBehaviour
         if(otherID == idObj)
         {
             matchEvent.Invoke();
+            Destroy(gameObject);
+            Destroy(other.gameObject);
             Debug.Log("Matched");
         }
         else
@@ -24,8 +26,8 @@ public class MatchBehaviour : IDContainerBehaviour
             Debug.Log("No Match");
             Debug.Log("GAME OVER!");
             Time.timeScale = 0;
-            gameoverText.SetActive(true);
-            gameoverScreen.SetActive(true);
+            // gameoverText.SetActive(true);
+            // gameoverScreen.SetActive(true);
         }
 
         // Debug.Log(idObj);
