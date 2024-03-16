@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System;
+using System.Threading;
 
 public class MatchBehaviour : IDContainerBehaviour
 {
@@ -16,14 +18,15 @@ public class MatchBehaviour : IDContainerBehaviour
         if(otherID == idObj)
         {
             matchEvent.Invoke();
-            Destroy(gameObject);
-            Destroy(other.gameObject);
+            
+            //Destroy(gameObject);
+            //Destroy(other.gameObject);
             Debug.Log("Matched");
         }
         else
         {
             noMatchEvent.Invoke();
-            Destroy(gameObject);
+            // Destroy(gameObject);
             Debug.Log("No Match");
             Debug.Log("GAME OVER!");
             // Time.timeScale = 0;
